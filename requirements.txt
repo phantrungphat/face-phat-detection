@@ -1,6 +1,7 @@
 requests
 asyncio
 websockets
+websocket_client
 numpy
 imutils
 opencv-python
