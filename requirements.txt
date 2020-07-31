@@ -1,0 +1,7 @@
+requests
+asyncio
+websockets
+numpy
+imutils
+opencv-python
+matplotlib
