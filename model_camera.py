@@ -28,7 +28,7 @@ import time
 #         await websocket.send("OpenTheDoor")
 
 #image = "12.jpg"
-filepath = "F:/hk6/IoT/LyThuyet/Project/Server/"
+filepath = "face-phat-detection/"
 # load our serialized face detector from disk
 print("[INFO] loading face detector...")
 protoPath = os.path.sep.join([ filepath + "face_detection_model", "deploy.prototxt"])
