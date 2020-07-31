@@ -28,21 +28,21 @@ import time
 #         await websocket.send("OpenTheDoor")
 
 #image = "12.jpg"
-filepath = "face-phat-detection/"
+# filepath = "./face-phat-detection/"
 # load our serialized face detector from disk
 print("[INFO] loading face detector...")
-protoPath = os.path.sep.join([ filepath + "face_detection_model", "deploy.prototxt"])
-modelPath = os.path.sep.join([ filepath + "face_detection_model",
+protoPath = os.path.sep.join(["face_detection_model", "deploy.prototxt"])
+modelPath = os.path.sep.join(["face_detection_model",
 	"res10_300x300_ssd_iter_140000.caffemodel"])
 detector = cv2.dnn.readNetFromCaffe(protoPath, modelPath)
 
 # load our serialized face embedding model from disk
 print("[INFO] loading face recognizer...")
-embedder = cv2.dnn.readNetFromTorch(filepath + "openface_nn4.small2.v1.t7")
+embedder = cv2.dnn.readNetFromTorch("openface_nn4.small2.v1.t7")
 
 # load the actual face recognition model along with the label encoder
-recognizer = pickle.loads(open(filepath + "recognizer.pickle", "rb").read())
-le = pickle.loads(open(filepath + "le.pickle", "rb").read())
+recognizer = pickle.loads(open("recognizer.pickle", "rb").read())
+le = pickle.loads(open("le.pickle", "rb").read())
 
 # initialize the video stream and allow the cammera sensor to warmup
 print("[INFO] starting video stream...")
