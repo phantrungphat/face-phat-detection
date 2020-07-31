@@ -8,11 +8,11 @@ RUN git clone -q https://github.com/phantrungphat/face-phat-detection.git
 RUN python --version
 RUN pip --version
 
+# set the working directory for containers
+WORKDIR  ./face-phat-detection
+
 #install packets requirements
 RUN pip install -r requirements.txt
-
-# set the working directory for containers
-WORKDIR  face-phat-detection
 
 # Running Python Application
 CMD ["python", "model_camera.py"]
