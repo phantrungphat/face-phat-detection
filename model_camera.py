@@ -14,7 +14,6 @@ import imutils
 import pickle
 import cv2
 import os
-import matplotlib.pyplot as plt
 from imutils.video import VideoStream
 import time
 

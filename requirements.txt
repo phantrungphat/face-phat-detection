@@ -3,6 +3,4 @@ asyncio
 websockets
 websocket_client
 numpy
-sklearn
 imutils
-matplotlib
