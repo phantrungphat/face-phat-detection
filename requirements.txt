@@ -3,4 +3,5 @@ asyncio
 websockets
 websocket_client
 numpy
+scipy
 imutils

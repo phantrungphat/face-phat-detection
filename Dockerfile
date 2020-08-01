@@ -13,8 +13,8 @@ WORKDIR  ./face-phat-detection
 
 RUN pip3 install --upgrade cython
 #install packets requirements
-RUN pip install -r requirements.txt
-RUN pip install scikit-learn
+RUN pip3 install -r requirements.txt
+RUN pip3 install scikit-learn
 RUN apt-get update && \
 	apt-get install -y python3-opencv
 
