@@ -14,5 +14,8 @@ WORKDIR  ./face-phat-detection
 #install packets requirements
 RUN pip install -r requirements.txt
 
+RUN apt-get update && \
+	apt-get install -y python3-opencv
+
 # Running Python Application
 CMD ["python", "model_camera.py"]

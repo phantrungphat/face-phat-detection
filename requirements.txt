@@ -5,5 +5,4 @@ websocket_client
 numpy
 sklearn
 imutils
-opencv-python
 matplotlib
